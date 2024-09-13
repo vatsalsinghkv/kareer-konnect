@@ -1,7 +1,6 @@
 import { LucideIcon } from 'lucide-react';
 
 import { IconLinkType, LinkType } from '@/lib/types';
-import { cn } from '@/lib/utils';
 
 import Wrapper from '@/components/layout/Wrapper';
 import { Logo } from '@/components/shared';
@@ -11,7 +10,7 @@ import { Button } from '@/components/ui/button';
 export default function Footer() {
   return (
     <Wrapper as='footer' className='dark bg-background text-foreground'>
-      <div className='md:flex md:items-start md:justify-between'>
+      {/*       <div className='md:flex md:items-start md:justify-between'>
         <h5 className={cn('max-w-lg h3')}>
           Feel free to contact us{' '}
           <UnstyledLink
@@ -23,9 +22,9 @@ export default function Footer() {
           <br />
           if you have any questions!
         </h5>
-      </div>
+      </div> */}
 
-      <div className='relative lg:flex lg:items-center lg:justify-between mt-14 lg:mt-24'>
+      <div className='relative lg:flex lg:items-center lg:justify-between'>
         <Logo className='mx-auto lg:mx-0' />
 
         <ul className='flex items-center justify-center gap-2 mt-8 sm:mt-12 sm:space-x-16 lg:mt-0'>

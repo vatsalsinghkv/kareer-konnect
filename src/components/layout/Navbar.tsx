@@ -59,7 +59,7 @@ const ListItem = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
 
 function Menu() {
   return (
-    <NavigationMenu className=' hidden md:ml-[2vw] lg:flex'>
+    <NavigationMenu className='hidden md:ml-auto lg:flex'>
       <NavigationMenuList>
         {nav_links.map((link) => {
           if (!link?.heroTitle && link.links) {
@@ -129,6 +129,23 @@ const Navbar = () => {
 
   const isNotInView = useInView(ref, { once: false, amount: 0.9 });
 
+  const LoginSignUpAndSignOutBtn = ({ isSidebar }: { isSidebar?: boolean }) => {
+    return (
+      <>
+        <Button
+          variant='outline'
+          asChild
+          className={cn('shrink-0', isSidebar && 'w-full')}
+        >
+          <UnstyledLink href='/auth/login'>Login</UnstyledLink>
+        </Button>
+        <Button asChild className={cn('shrink-0', isSidebar && 'w-full')}>
+          <UnstyledLink href='/auth/register'>Get Started</UnstyledLink>
+        </Button>
+      </>
+    );
+  };
+
   return (
     <Sheet>
       <div
@@ -155,8 +172,8 @@ const Navbar = () => {
 
             <Menu />
 
-            <div className='ml-auto gap-3 flex'>
-              {/* <CartBtn variant='outline' /> */}
+            <div className='ml-auto hidden gap-3 sm:flex'>
+              <LoginSignUpAndSignOutBtn />
             </div>
             <SheetTrigger asChild>
               <Button
@@ -246,13 +263,9 @@ const Navbar = () => {
             );
           })}
         </Accordion>
+
         <SheetFooter className='mt-auto flex gap-2 sm:flex-col sm:space-x-0'>
-          <Button
-            variant='ghost'
-            size='icon'
-            asChild
-            className='w-full '
-          ></Button>
+          <LoginSignUpAndSignOutBtn isSidebar />
         </SheetFooter>
       </SheetContent>
       <div ref={ref} className='absolute inset-0 -z-10'></div>
