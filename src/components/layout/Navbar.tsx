@@ -303,27 +303,27 @@ type INavLinks = {
 
 const nav_links: INavLinks[] = [
   {
-    title: 'Product',
-    href: '/why-lifekit',
-    heroTitle: 'Smart proposal builder, made for Companies',
+    title: 'Platform',
+    href: '/platform-overview',
+    heroTitle: 'AI-driven Career Development for Graduates',
     links: [
       {
-        title: 'Automation',
-        href: '/docs/primitives/alert-dialog',
+        title: 'Job Matchmaking',
+        href: '/platform/job-matchmaking',
         description:
-          'A modal dialog that interrupts the user with important content and expects a response.',
+          'Leverage AI-driven algorithms to match graduates with suitable job opportunities across various sectors.',
       },
       {
-        title: 'Chat bot',
-        href: '/docs/primitives/hover-card',
+        title: 'Internships & Training',
+        href: '/platform/internships-training',
         description:
-          'For sighted users to preview content available behind a link.',
+          'Explore opportunities for internships and industrial training to gain real-world experience.',
       },
       {
-        title: 'Presonalization',
-        href: '/docs/primitives/progress',
+        title: 'Mentorship Programs',
+        href: '/platform/mentorship',
         description:
-          'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+          'Connect with industry professionals for guidance and mentorship to navigate early career challenges.',
       },
     ],
   },
@@ -331,54 +331,38 @@ const nav_links: INavLinks[] = [
     title: 'Solutions',
     links: [
       {
-        title: 'AI Proposal Generator',
-        href: '/docs/primitives/alert-dialog',
+        title: 'Career Counseling',
+        href: '/solutions/career-counseling',
         description:
-          'A modal dialog that interrupts the user with important content and expects a response.',
+          'Access professional counseling and career guidance services tailored to help graduates succeed.',
       },
       {
-        title: 'eSign',
-        href: '/docs/primitives/hover-card',
+        title: 'Resume Building',
+        href: '/solutions/resume-building',
         description:
-          'For sighted users to preview content available behind a link.',
+          'Use our tools to create a professional resume that stands out to employers.',
       },
       {
-        title: 'Budget Quotation',
-        href: '/docs/primitives/progress',
+        title: 'Interview Preparation',
+        href: '/solutions/interview-preparation',
         description:
-          'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+          'Prepare for interviews with tailored resources, tips, and mock interview sessions.',
       },
       {
-        title: 'Contaract Managent',
-        href: '/docs/primitives/scroll-area',
-        description: 'Visually or semantically separates content.',
+        title: 'Job Application Support',
+        href: '/solutions/job-application-support',
+        description:
+          'Get support and resources to streamline the job application process from start to finish.',
       },
       {
-        title: 'Payments',
-        href: '/docs/primitives/tabs',
+        title: 'Overseas Opportunities',
+        href: '/solutions/overseas-opportunities',
         description:
-          'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
-      },
-      {
-        title: 'Proposal Tracking',
-        href: '/docs/primitives/tooltip',
-        description:
-          'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-      },
-      {
-        title: 'Invoice Generator',
-        href: '/docs/primitives/tooltip',
-        description:
-          'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-      },
-      {
-        title: 'Email Tracking',
-        href: '/docs/primitives/tooltip',
-        description:
-          'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+          'Discover and apply for international job opportunities in various sectors.',
       },
     ],
   },
   { title: 'Features', href: '/#features' },
-  { title: 'Shop', href: '/product' },
+  { title: 'Blog', href: '/blog' },
+  { title: 'Contact Us', href: '/contact' },
 ];

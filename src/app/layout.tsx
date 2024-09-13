@@ -15,10 +15,10 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'GetLifeGard | Defend, Protect & Survive',
+  title: 'KareerKonnect | Empowering Your Job Search and Career Development',
   description:
-    'Protect You & Your Loved Ones with The Safekey. Strengthen Your Personal Safety with a rechargeable, loud, and compact SOS Alarm.',
-  metadataBase: new URL('https://www.getlifegard.com/'),
+    'Unlock your potential with KareerKonnect. Access diverse job opportunities, internships, and mentorship programs tailored to graduates seeking success in the job market.',
+  metadataBase: new URL('https://www.careerconnect.com/'),
   robots: { index: true, follow: true },
   icons: {
     icon: '/images/favicon/favicon.ico',
@@ -27,17 +27,17 @@ export const metadata: Metadata = {
   },
   manifest: `/images/favicon/site.webmanifest`,
   openGraph: {
-    title: 'GetLifeGard | Defend, Protect & Survive',
+    title: 'KareerKonnect | Empowering Your Job Search and Career Development',
     description:
-      'Protect You & Your Loved Ones with The Safekey. Strengthen Your Personal Safety with a rechargeable, loud, and compact SOS Alarm',
-    url: 'https://www.getlifegard.com/',
-    siteName: 'GetLifeGard',
+      'Unlock your potential with KareerKonnect. Access diverse job opportunities, internships, and mentorship programs tailored to graduates seeking success in the job market.',
+    url: 'https://www.careerconnect.com/',
+    siteName: 'KareerKonnect',
     images: [
       {
-        url: 'https://www.getlifegard.com/images/og.png',
+        url: 'https://www.careerconnect.com/images/og.png',
         width: 800,
         height: 600,
-        alt: 'GetLifeGard',
+        alt: 'KareerKonnect',
       },
     ],
   },

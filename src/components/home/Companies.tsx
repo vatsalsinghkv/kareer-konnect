@@ -7,7 +7,10 @@ const Companies = () => {
   return (
     <Wrapper className='py-16 lg:py-20 xl:py-24 relative'>
       <div className='text-center'>
-        <h2 className='h1'>Featured companies actively hiring</h2>
+        <h2 className='h1 capitalize'>
+          Featured Companies{' '}
+          <span className='text-gradient-primary'>actively hiring</span>
+        </h2>
         <p className='max-w-lg mx-auto mt-4 leading-relaxed text-muted-foreground'>
           Companies and startups which use our platform
         </p>

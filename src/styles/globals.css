@@ -106,12 +106,8 @@
     text-transform: inherit;
   }
 
-  .h0 {
-    @apply text-3xl sm:text-4xl md:text-5xl xl:text-5xl tracking-tighter font-normal;
-  }
-
   .h-title {
-    @apply font-sans text-4xl md:text-5xl lg:text-6xl tracking-tighter font-normal;
+    @apply font-sans text-4xl md:text-5xl lg:text-7xl tracking-tighter font-normal;
   }
 
   .h-subtitle {
@@ -138,7 +134,8 @@
     @apply text-base font-normal md:text-lg;
   }
   .text-gradient-primary {
-    @apply bg-gradient-to-r from-primary to-fuchsia-500 bg-clip-text text-transparent;
+    /* @apply bg-gradient-to-r from-primary to-fuchsia-500 bg-clip-text text-transparent; */
+    @apply bg-gradient-to-r from-sky-400 to-teal-400 bg-clip-text text-transparent;
   }
 
   .text-gradient-secondary {

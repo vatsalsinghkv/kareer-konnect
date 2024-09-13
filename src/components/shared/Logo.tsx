@@ -1,4 +1,4 @@
-import { Activity } from 'lucide-react';
+import { Workflow } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 
@@ -31,7 +31,7 @@ const Logo = ({
       )}
       {...rest}
     >
-      <Activity
+      <Workflow
         size={size}
         className={cn(
           'shrink-0',

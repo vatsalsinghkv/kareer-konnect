@@ -1,12 +1,5 @@
 'use client';
-import {
-  BatteryCharging,
-  Crosshair,
-  Lightbulb,
-  Megaphone,
-  Shield,
-  SquareArrowOutDownLeft,
-} from 'lucide-react';
+import { BookOpen, Briefcase, GraduationCap, Target } from 'lucide-react';
 import Image from 'next/image';
 
 import { FeatureType } from '@/lib/types';
@@ -20,15 +13,15 @@ const Features = () => {
     <Wrapper id='features'>
       <div className='max-w-4xl mx-auto text-center'>
         <h2 className='mt-16 mb-6 h1'>
-          It's not impossible to{' '}
-          <span className='text-gradient-primary'>stay safe in public,</span>
-          <br />
-          you just have to take the right steps.
+          Helping Graduates{' '}
+          <span className='text-gradient-primary'>Bridge the Gap</span> between
+          Education and Employment.
         </h2>
 
         <p className='max-w-lg mx-auto mt-4 leading-relaxed text-muted-foreground'>
-          Experience Enhanced Personal Safety with our rechargeable self-defense
-          keychain equipped with a 130-140dB SOS alarm.
+          Unlock your potential with our AI-driven platform that connects you
+          with job opportunities, internships, and mentorship programs across
+          the private, government, and international sectors.
         </p>
       </div>
 
@@ -47,7 +40,7 @@ const Features = () => {
             height={750}
             className='w-full rounded-lg shadow-xl'
             src='https://cdn.rareblocks.xyz/collection/celebration/images/features/7/dashboard-screenshot.png'
-            alt=''
+            alt='Platform Dashboard'
           />
         </div>
       </div>
@@ -60,44 +53,30 @@ export default Features;
 export const features: FeatureType[] = [
   {
     id: 'f1',
-    name: 'Alarm Activation',
+    name: 'AI-Driven Job Matchmaking',
     description:
-      'Easily activate The Safekey alarm by pulling the keychain, providing a quick and effective way to alert others.',
-    icon: Megaphone,
+      'Our advanced algorithms connect you with job opportunities tailored to your skills, qualifications, and preferences.',
+    icon: Target,
   },
   {
     id: 'f2',
-    name: 'Self-Defense Features',
+    name: 'Access to Diverse Job Markets',
     description:
-      'Equipped with a 130-140dB alarm, The Safekey scares attackers and alerts people within 1000 feet.',
-    icon: Crosshair,
+      'Gain access to private, government, and international job opportunities with regularly updated listings.',
+    icon: Briefcase,
   },
   {
     id: 'f3',
-    name: 'Rechargeable',
+    name: 'Career Counseling & Guidance',
     description:
-      'Conveniently recharge The Safekey with a USB-C port, offering fast charging, lasting up to 12 months on standby.',
-    icon: BatteryCharging,
+      'Get personalized counseling and resources, including resume building, interview preparation, and career advice.',
+    icon: BookOpen,
   },
   {
     id: 'f4',
-    name: 'Compact & Portable',
+    name: 'Internships & Industrial Training',
     description:
-      'Easily attach it to your keychain, or carry it in your pocket.',
-    icon: SquareArrowOutDownLeft,
-  },
-  {
-    id: 'f5',
-    name: 'Flashlight',
-    description:
-      'The powerful 40 lumens LED light provides visibility in low-light situations.',
-    icon: Lightbulb,
-  },
-  {
-    id: 'f6',
-    name: 'Durability',
-    description:
-      'Built to withstand tough conditions with an IPX3 rating, and a battery lasting up to 12 months.',
-    icon: Shield,
+      'Explore internships and training programs designed to give you hands-on experience and help kickstart your career.',
+    icon: GraduationCap,
   },
 ];

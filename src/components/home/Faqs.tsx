@@ -13,10 +13,10 @@ export default function Faqs() {
   return (
     <Wrapper id='faqs'>
       <div className='max-w-2xl mx-auto text-center'>
-        <h2 className='h0'>Frequently Asked Questions</h2>
+        <h2 className='h1'>Frequently Asked Questions</h2>
         <p className='max-w-lg mx-auto mt-4 text-muted-foreground'>
-          With lots of unique questions, We will be answering most of the
-          Frequently Asked Questions here.
+          Have questions about our platform? We've got you covered! Here are
+          some of the most frequently asked questions.
         </p>
       </div>
 
@@ -74,27 +74,27 @@ const Faq = ({ selected, setSelected, q, a }: FaqProps) => {
 const questions = [
   {
     id: 1,
-    q: 'How do I activate the alarm?',
-    a: 'To activate the alarm on the keychain, simply press the dedicated alarm button or pull out the activation pin, depending on the model. Refer to the user manual for specific instructions on your product.',
+    q: 'How does the AI-driven job matchmaking work?',
+    a: 'Our advanced AI algorithms analyze your skills, qualifications, and preferences to match you with the most suitable job opportunities across various sectors and regions.',
   },
   {
     id: 2,
-    q: 'Is the battery rechargeable?',
-    a: 'Yes, the keychain comes with a rechargeable battery. Simply connect it to a power source using the provided charging cable to recharge the battery for repeated use.',
+    q: 'What kind of job opportunities are available on the platform?',
+    a: 'We offer access to a wide range of job opportunities across the private sector, government sector, and overseas employment, regularly updated to provide the best options.',
   },
   {
     id: 3,
-    q: 'Can I customize the alarm sound volume?',
-    a: 'Yes, you can customize the alarm sound volume based on your preference. Refer to the user manual for instructions on adjusting the volume settings on your keychain.',
+    q: 'How can I find internship and industrial training opportunities?',
+    a: 'We have a dedicated section for internships and industrial training. You can browse opportunities, apply, and even get guidance on how to secure the best experiences for your career growth.',
   },
   {
     id: 4,
-    q: 'Is the keychain waterproof?',
-    a: 'The keychain is designed to be water-resistant with an IPX3 rating, making it suitable for use in various weather conditions. However, it is not recommended for prolonged submersion in water.',
+    q: 'What kind of mentorship programs are available?',
+    a: 'Our mentorship programs are powered by both AI-driven recommendations and direct guidance from industry professionals. AI will suggest personalized career advice, while professionals provide hands-on support to help you navigate career challenges.',
   },
   {
     id: 5,
-    q: 'Can I test The Safekey?',
-    a: 'Yes! Just pull the pin to activate The Safekey. To stop the alarm, simply put the pin back in.',
+    q: 'Are there any career counseling services available?',
+    a: 'Yes, our platform provides access to personalized counseling services through AI tools for quick advice and guidance from career professionals for in-depth support with job applications, resume building, and interview preparation.',
   },
 ];
