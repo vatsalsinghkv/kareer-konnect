@@ -1,10 +1,10 @@
-import { Hero } from '@/components/home';
+import { Features, Hero } from '@/components/home';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      {/* <Features /> */}
+      <Features />
       {/* <Demo /> */}
       {/* <Faqs /> */}
     </>
