@@ -1,4 +1,4 @@
-import { Companies, Faqs, Features, Hero } from '@/components/home';
+import { Companies, Faqs, Features, Hero } from "@/components/home";
 
 export default function Home() {
   return (

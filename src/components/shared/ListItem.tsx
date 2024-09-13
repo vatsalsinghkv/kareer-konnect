@@ -1,10 +1,10 @@
-import { cn } from '@/lib/utils';
+import React from "react";
 
-import React from 'react';
+import { cn } from "@/lib/utils";
 
-interface Props extends React.ComponentPropsWithoutRef<'li'> {
+interface Props extends React.ComponentPropsWithoutRef<"li"> {
   children: React.ReactNode;
-  bulletClass?: React.ComponentProps<'li'>['className'];
+  bulletClass?: React.ComponentProps<"li">["className"];
 }
 
 export default function ListItem({
@@ -14,11 +14,11 @@ export default function ListItem({
   ...props
 }: Props) {
   return (
-    <li className={cn('flex gap-3', className)} {...props}>
+    <li className={cn("flex gap-3", className)} {...props}>
       <span
         className={cn(
-          'w-1.5 mt-[9px] flex-shrink-0 h-1.5 rounded-full bg-muted-foreground',
-          bulletClass
+          "w-1.5 mt-[9px] flex-shrink-0 h-1.5 rounded-full bg-muted-foreground",
+          bulletClass,
         )}
       ></span>
       <span>{children}</span>

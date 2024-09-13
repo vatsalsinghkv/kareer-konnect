@@ -95,7 +95,7 @@
 
   .cursor-newtab {
     cursor:
-      url('/images/new-tab.png') 10 10,
+      url("/images/new-tab.png") 10 10,
       pointer;
   }
 

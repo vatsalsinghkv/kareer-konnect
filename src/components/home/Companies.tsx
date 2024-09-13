@@ -1,77 +1,77 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
-import { Wrapper } from '../layout';
+import { Wrapper } from "../layout";
 
 const Companies = () => {
   return (
-    <Wrapper className='py-16 lg:py-20 xl:py-24 relative'>
-      <div className='text-center'>
-        <h2 className='h1 capitalize'>
-          Featured Companies{' '}
-          <span className='text-gradient-primary'>actively hiring</span>
+    <Wrapper className="py-16 lg:py-20 xl:py-24 relative">
+      <div className="text-center">
+        <h2 className="h1 capitalize">
+          Featured Companies{" "}
+          <span className="text-gradient-primary">actively hiring</span>
         </h2>
-        <p className='max-w-lg mx-auto mt-4 leading-relaxed text-muted-foreground'>
+        <p className="max-w-lg mx-auto mt-4 leading-relaxed text-muted-foreground">
           Companies and startups which use our platform
         </p>
       </div>
 
-      <div className='flex flex-wrap items-center justify-center max-w-5xl gap-8 mx-auto mt-12 sm:mt-16 sm:gap-y-12 md:gap-16'>
+      <div className="flex flex-wrap items-center justify-center max-w-5xl gap-8 mx-auto mt-12 sm:mt-16 sm:gap-y-12 md:gap-16">
         <Image
           height={50}
           width={100}
-          className='object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-44'
-          src='https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/waverio.svg'
-          alt=''
+          className="object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-44"
+          src="https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/waverio.svg"
+          alt=""
         />
         <Image
           height={50}
           width={100}
-          className='object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-44'
-          src='https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/logoipsum.svg'
-          alt=''
+          className="object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-44"
+          src="https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/logoipsum.svg"
+          alt=""
         />
         <Image
           height={50}
           width={100}
-          className='object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-44'
-          src='https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/alterbone.svg'
-          alt=''
+          className="object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-44"
+          src="https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/alterbone.svg"
+          alt=""
         />
         <Image
           height={50}
           width={100}
-          className='object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-44'
-          src='https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/carbonia.svg'
-          alt=''
+          className="object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-44"
+          src="https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/carbonia.svg"
+          alt=""
         />
         <Image
           height={50}
           width={100}
-          className='object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-40'
-          src='https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/tinygone.svg'
-          alt=''
+          className="object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-40"
+          src="https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/tinygone.svg"
+          alt=""
         />
         <Image
           height={50}
           width={100}
-          className='object-contain w-32 max-w-full sm:h-8 md:h-9 sm:w-40'
-          src='https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/preso.svg'
-          alt=''
+          className="object-contain w-32 max-w-full sm:h-8 md:h-9 sm:w-40"
+          src="https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/preso.svg"
+          alt=""
         />
         <Image
           height={50}
           width={100}
-          className='object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-40'
-          src='https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/ridoria.svg'
-          alt=''
+          className="object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-40"
+          src="https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/ridoria.svg"
+          alt=""
         />
         <Image
           height={50}
           width={100}
-          className='object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-40'
-          src='https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/incanto.svg'
-          alt=''
+          className="object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-40"
+          src="https://landingfoliocom.imgix.net/store/collection/saasui/images/cloud-logos/4/incanto.svg"
+          alt=""
         />
       </div>
 

@@ -1,21 +1,21 @@
-'use client';
-import { useInView } from 'framer-motion';
-import { MenuIcon } from 'lucide-react';
-import Link from 'next/link';
-import * as React from 'react';
+"use client";
+import { useInView } from "framer-motion";
+import { MenuIcon } from "lucide-react";
+import Link from "next/link";
+import * as React from "react";
 
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
-import { Logo } from '@/components/shared';
-import { UnstyledLink } from '@/components/shared/links';
-import { UnstyledLinkProps } from '@/components/shared/links/UnstyledLink';
+import { Logo } from "@/components/shared";
+import { UnstyledLink } from "@/components/shared/links";
+import { UnstyledLinkProps } from "@/components/shared/links/UnstyledLink";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
-import { Button } from '@/components/ui/button';
+} from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -24,14 +24,14 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu';
+} from "@/components/ui/navigation-menu";
 import {
   Sheet,
   SheetContent,
   SheetFooter,
   SheetHeader,
   SheetTrigger,
-} from '@/components/ui/sheet';
+} from "@/components/ui/sheet";
 
 const ListItem = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
   ({ className, title, children, ...props }, ref) => {
@@ -41,25 +41,25 @@ const ListItem = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
           <UnstyledLink
             ref={ref}
             className={cn(
-              'hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors',
-              className
+              "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
+              className,
             )}
             {...props}
           >
-            <div className='text-sm font-medium leading-none'>{title}</div>
-            <p className='text-muted-foreground line-clamp-2 text-sm leading-snug'>
+            <div className="text-sm font-medium leading-none">{title}</div>
+            <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
               {children}
             </p>
           </UnstyledLink>
         </NavigationMenuLink>
       </li>
     );
-  }
+  },
 );
 
 function Menu() {
   return (
-    <NavigationMenu className='hidden md:ml-auto lg:flex'>
+    <NavigationMenu className="hidden md:ml-auto lg:flex">
       <NavigationMenuList>
         {nav_links.map((link) => {
           if (!link?.heroTitle && link.links) {
@@ -67,7 +67,7 @@ function Menu() {
               <NavigationMenuItem key={link.href}>
                 <NavigationMenuTrigger>{link.title}</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className='grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] '>
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                     {link.links.map(({ title, href, description }) => (
                       <ListItem key={title} title={title} href={href}>
                         {description}
@@ -84,15 +84,15 @@ function Menu() {
               <NavigationMenuItem key={link.href}>
                 <NavigationMenuTrigger>{link.title}</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className='grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
-                    <li className='row-span-3'>
+                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                    <li className="row-span-3">
                       <NavigationMenuLink asChild>
                         <a
-                          className='from-muted/50 to-muted flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md'
+                          className="from-muted/50 to-muted flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
                           href={link.href}
                         >
-                          <Logo className='mb-2 mt-4' />
-                          <p className='text-muted-foreground text-sm leading-tight'>
+                          <Logo className="mb-2 mt-4" />
+                          <p className="text-muted-foreground text-sm leading-tight">
                             Smart proposal builder, made for Companies
                           </p>
                         </a>
@@ -133,14 +133,14 @@ const Navbar = () => {
     return (
       <>
         <Button
-          variant='ghost'
+          variant="ghost"
           asChild
-          className={cn('shrink-0', isSidebar && 'w-full')}
+          className={cn("shrink-0", isSidebar && "w-full")}
         >
-          <UnstyledLink href='/auth/login'>Login</UnstyledLink>
+          <UnstyledLink href="/auth/login">Login</UnstyledLink>
         </Button>
-        <Button asChild className={cn('shrink-0', isSidebar && 'w-full')}>
-          <UnstyledLink href='/auth/register'>Get Started</UnstyledLink>
+        <Button asChild className={cn("shrink-0", isSidebar && "w-full")}>
+          <UnstyledLink href="/auth/register">Get Started</UnstyledLink>
         </Button>
       </>
     );
@@ -149,37 +149,37 @@ const Navbar = () => {
   return (
     <Sheet>
       <div
-        className={cn('fixed z-30 w-full ')}
-        style={{ padding: isNotInView ? '0.6rem 0' : '.5rem 0' }}
+        className={cn("fixed z-30 w-full ")}
+        style={{ padding: isNotInView ? "0.6rem 0" : ".5rem 0" }}
       >
         <header
-          className='layout flex h-full flex-col items-center justify-center rounded-2xl border backdrop-blur'
+          className="layout flex h-full flex-col items-center justify-center rounded-2xl border backdrop-blur"
           style={{
-            padding: isNotInView ? '0' : '.7rem',
+            padding: isNotInView ? "0" : ".7rem",
             backgroundColor: isNotInView
-              ? 'transparent'
-              : 'hsl(var(--background) / 0.8)',
-            backdropFilter: isNotInView ? '' : 'blur(1rem)',
-            borderWidth: isNotInView ? '0px' : '1px',
-            maxWidth: isNotInView ? '80rem' : '70rem',
-            transition: 'all 0.3s ease',
+              ? "transparent"
+              : "hsl(var(--background) / 0.8)",
+            backdropFilter: isNotInView ? "" : "blur(1rem)",
+            borderWidth: isNotInView ? "0px" : "1px",
+            maxWidth: isNotInView ? "80rem" : "70rem",
+            transition: "all 0.3s ease",
           }}
         >
-          <div className={cn('flex w-full items-center justify-between')}>
-            <div className='flex-shrink-0'>
+          <div className={cn("flex w-full items-center justify-between")}>
+            <div className="flex-shrink-0">
               <Logo />
             </div>
 
             <Menu />
 
-            <div className='ml-auto hidden gap-3 sm:flex'>
+            <div className="ml-auto hidden gap-3 sm:flex">
               <LoginSignUpAndSignOutBtn />
             </div>
             <SheetTrigger asChild>
               <Button
-                variant='outline'
-                size='icon'
-                className='ml-3 flex lg:hidden'
+                variant="outline"
+                size="icon"
+                className="ml-3 flex lg:hidden"
               >
                 <MenuIcon />
               </Button>
@@ -187,31 +187,31 @@ const Navbar = () => {
           </div>
         </header>
       </div>
-      <SheetContent className='flex flex-col overflow-y-auto'>
+      <SheetContent className="flex flex-col overflow-y-auto">
         <SheetHeader>
           <Logo />
         </SheetHeader>
-        <Accordion collapsible type='single'>
+        <Accordion collapsible type="single">
           {nav_links.map((link) => {
             if (link.links) {
               return (
                 <AccordionItem value={link.title} key={link.href}>
                   <AccordionTrigger>{link.title}</AccordionTrigger>
-                  <AccordionContent className='p-0'>
+                  <AccordionContent className="p-0">
                     {!link?.heroTitle && link.links && (
-                      <ul className='w-full gap-3'>
+                      <ul className="w-full gap-3">
                         {link.links.map(({ title, href, description }) => (
                           <UnstyledLink
                             href={href}
                             className={cn(
-                              'hover:bg-accent hover:text-primary focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors'
+                              "hover:bg-accent hover:text-primary focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
                             )}
                             key={title}
                           >
-                            <div className='text-sm font-medium leading-none'>
+                            <div className="text-sm font-medium leading-none">
                               {title}
                             </div>
-                            <p className='text-muted-foreground line-clamp-2 text-sm leading-snug'>
+                            <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
                               {description}
                             </p>
                           </UnstyledLink>
@@ -220,27 +220,27 @@ const Navbar = () => {
                     )}
 
                     {link.heroTitle && link.links && (
-                      <ul className='grid w-full gap-3'>
-                        <li className='row-span-3'>
+                      <ul className="grid w-full gap-3">
+                        <li className="row-span-3">
                           <a
-                            className='from-muted/50 to-muted flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md'
+                            className="from-muted/50 to-muted flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
                             href={link.href}
                           >
-                            <Logo className='mb-2 mt-4' />
+                            <Logo className="mb-2 mt-4" />
                           </a>
                         </li>
                         {link.links.map(({ title, href, description }) => (
                           <UnstyledLink
                             href={href}
                             className={cn(
-                              'hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors'
+                              "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
                             )}
                             key={title}
                           >
-                            <div className='text-sm font-medium leading-none'>
+                            <div className="text-sm font-medium leading-none">
                               {title}
                             </div>
-                            <p className='text-muted-foreground line-clamp-2 text-sm leading-snug'>
+                            <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
                               {description}
                             </p>
                           </UnstyledLink>
@@ -254,7 +254,7 @@ const Navbar = () => {
 
             return (
               <UnstyledLink
-                className='h3 flex flex-1 items-center justify-between border-b py-4 font-medium transition-all hover:underline'
+                className="h3 flex flex-1 items-center justify-between border-b py-4 font-medium transition-all hover:underline"
                 href={link.href}
                 key={link.title}
               >
@@ -264,11 +264,11 @@ const Navbar = () => {
           })}
         </Accordion>
 
-        <SheetFooter className='mt-auto flex gap-2 sm:flex-col sm:space-x-0'>
+        <SheetFooter className="mt-auto flex gap-2 sm:flex-col sm:space-x-0">
           <LoginSignUpAndSignOutBtn isSidebar />
         </SheetFooter>
       </SheetContent>
-      <div ref={ref} className='absolute inset-0 -z-10'></div>
+      <div ref={ref} className="absolute inset-0 -z-10"></div>
     </Sheet>
   );
 };
@@ -303,66 +303,66 @@ type INavLinks = {
 
 const nav_links: INavLinks[] = [
   {
-    title: 'Platform',
-    href: '/platform-overview',
-    heroTitle: 'AI-driven Career Development for Graduates',
+    title: "Platform",
+    href: "/platform-overview",
+    heroTitle: "AI-driven Career Development for Graduates",
     links: [
       {
-        title: 'Job Matchmaking',
-        href: '/platform/job-matchmaking',
+        title: "Job Matchmaking",
+        href: "/platform/job-matchmaking",
         description:
-          'Leverage AI-driven algorithms to match graduates with suitable job opportunities across various sectors.',
+          "Leverage AI-driven algorithms to match graduates with suitable job opportunities across various sectors.",
       },
       {
-        title: 'Internships & Training',
-        href: '/platform/internships-training',
+        title: "Internships & Training",
+        href: "/platform/internships-training",
         description:
-          'Explore opportunities for internships and industrial training to gain real-world experience.',
+          "Explore opportunities for internships and industrial training to gain real-world experience.",
       },
       {
-        title: 'Mentorship Programs',
-        href: '/platform/mentorship',
+        title: "Mentorship Programs",
+        href: "/platform/mentorship",
         description:
-          'Connect with industry professionals for guidance and mentorship to navigate early career challenges.',
+          "Connect with industry professionals for guidance and mentorship to navigate early career challenges.",
       },
     ],
   },
   {
-    title: 'Solutions',
+    title: "Solutions",
     links: [
       {
-        title: 'Career Counseling',
-        href: '/solutions/career-counseling',
+        title: "Career Counseling",
+        href: "/solutions/career-counseling",
         description:
-          'Access professional counseling and career guidance services tailored to help graduates succeed.',
+          "Access professional counseling and career guidance services tailored to help graduates succeed.",
       },
       {
-        title: 'Resume Building',
-        href: '/solutions/resume-building',
+        title: "Resume Building",
+        href: "/solutions/resume-building",
         description:
-          'Use our tools to create a professional resume that stands out to employers.',
+          "Use our tools to create a professional resume that stands out to employers.",
       },
       {
-        title: 'Interview Preparation',
-        href: '/solutions/interview-preparation',
+        title: "Interview Preparation",
+        href: "/solutions/interview-preparation",
         description:
-          'Prepare for interviews with tailored resources, tips, and mock interview sessions.',
+          "Prepare for interviews with tailored resources, tips, and mock interview sessions.",
       },
       {
-        title: 'Job Application Support',
-        href: '/solutions/job-application-support',
+        title: "Job Application Support",
+        href: "/solutions/job-application-support",
         description:
-          'Get support and resources to streamline the job application process from start to finish.',
+          "Get support and resources to streamline the job application process from start to finish.",
       },
       {
-        title: 'Overseas Opportunities',
-        href: '/solutions/overseas-opportunities',
+        title: "Overseas Opportunities",
+        href: "/solutions/overseas-opportunities",
         description:
-          'Discover and apply for international job opportunities in various sectors.',
+          "Discover and apply for international job opportunities in various sectors.",
       },
     ],
   },
-  { title: 'Features', href: '/#features' },
-  { title: 'Blog', href: '/blog' },
-  { title: 'Contact Us', href: '/contact' },
+  { title: "Features", href: "/#features" },
+  { title: "Blog", href: "/blog" },
+  { title: "Contact Us", href: "/contact" },
 ];
