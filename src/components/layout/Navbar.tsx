@@ -289,7 +289,7 @@ type INavLinks = {
 );
 
 const nav_links: INavLinks[] = [
-  /* {
+  {
     title: 'Product',
     href: '/why-lifekit',
     heroTitle: 'Smart proposal builder, made for Companies',
@@ -313,59 +313,59 @@ const nav_links: INavLinks[] = [
           'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
       },
     ],
-  }, */
-  // {
-  //   title: 'Solutions',
-  //   links: [
-  //     {
-  //       title: 'AI Proposal Generator',
-  //       href: '/docs/primitives/alert-dialog',
-  //       description:
-  //         'A modal dialog that interrupts the user with important content and expects a response.',
-  //     },
-  //     {
-  //       title: 'eSign',
-  //       href: '/docs/primitives/hover-card',
-  //       description:
-  //         'For sighted users to preview content available behind a link.',
-  //     },
-  //     {
-  //       title: 'Budget Quotation',
-  //       href: '/docs/primitives/progress',
-  //       description:
-  //         'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
-  //     },
-  //     {
-  //       title: 'Contaract Managent',
-  //       href: '/docs/primitives/scroll-area',
-  //       description: 'Visually or semantically separates content.',
-  //     },
-  //     {
-  //       title: 'Payments',
-  //       href: '/docs/primitives/tabs',
-  //       description:
-  //         'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
-  //     },
-  //     {
-  //       title: 'Proposal Tracking',
-  //       href: '/docs/primitives/tooltip',
-  //       description:
-  //         'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-  //     },
-  //     {
-  //       title: 'Invoice Generator',
-  //       href: '/docs/primitives/tooltip',
-  //       description:
-  //         'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-  //     },
-  //     {
-  //       title: 'Email Tracking',
-  //       href: '/docs/primitives/tooltip',
-  //       description:
-  //         'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-  //     },
-  //   ],
-  // },
+  },
+  {
+    title: 'Solutions',
+    links: [
+      {
+        title: 'AI Proposal Generator',
+        href: '/docs/primitives/alert-dialog',
+        description:
+          'A modal dialog that interrupts the user with important content and expects a response.',
+      },
+      {
+        title: 'eSign',
+        href: '/docs/primitives/hover-card',
+        description:
+          'For sighted users to preview content available behind a link.',
+      },
+      {
+        title: 'Budget Quotation',
+        href: '/docs/primitives/progress',
+        description:
+          'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+      },
+      {
+        title: 'Contaract Managent',
+        href: '/docs/primitives/scroll-area',
+        description: 'Visually or semantically separates content.',
+      },
+      {
+        title: 'Payments',
+        href: '/docs/primitives/tabs',
+        description:
+          'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
+      },
+      {
+        title: 'Proposal Tracking',
+        href: '/docs/primitives/tooltip',
+        description:
+          'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+      },
+      {
+        title: 'Invoice Generator',
+        href: '/docs/primitives/tooltip',
+        description:
+          'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+      },
+      {
+        title: 'Email Tracking',
+        href: '/docs/primitives/tooltip',
+        description:
+          'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+      },
+    ],
+  },
   { title: 'Features', href: '/#features' },
   { title: 'Shop', href: '/product' },
 ];

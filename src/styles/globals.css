@@ -120,7 +120,7 @@
 
   h1,
   .h1 {
-    @apply text-3xl tracking-tighter font-normal leading-relaxed md:text-4xl lg:text-5xl;
+    @apply text-3xl tracking-tighter font-normal md:leading-relaxed md:text-4xl lg:text-5xl;
   }
 
   h2,

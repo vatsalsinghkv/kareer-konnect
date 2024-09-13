@@ -1,4 +1,5 @@
-import Features from '@/components/home/Featuers';
+import Companies from '@/components/home/Companies';
+import Features from '@/components/home/Features';
 import Hero from '@/components/home/Hero';
 
-export { Features, Hero };
+export { Companies, Features, Hero };

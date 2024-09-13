@@ -4,7 +4,7 @@ import BG from '@/components/home/Hero/BG';
 
 const Hero = () => {
   return (
-    <div className='overflow-x-hidden pt-20 md:pt-16'>
+    <div className='overflow-x-hidden pt-20 md:pt-24'>
       <BG className='dark:hidden' />
       <section className='relative py-12 sm:py-16 lg:py-24'>
         <div className='layout'>

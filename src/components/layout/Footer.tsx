@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Footer() {
   return (
-    <Wrapper as='footer' className='bg-background text-foreground'>
+    <Wrapper as='footer' className='dark bg-background text-foreground'>
       <div className='md:flex md:items-start md:justify-between'>
         <h5 className={cn('max-w-lg h3')}>
           Feel free to contact us{' '}
