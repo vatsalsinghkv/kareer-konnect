@@ -1,21 +1,21 @@
-"use client";
-import { useInView } from "framer-motion";
-import { MenuIcon } from "lucide-react";
-import Link from "next/link";
-import * as React from "react";
+'use client';
+import { useInView } from 'framer-motion';
+import { MenuIcon } from 'lucide-react';
+import Link from 'next/link';
+import * as React from 'react';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
-import { Logo } from "@/components/shared";
-import { UnstyledLink } from "@/components/shared/links";
-import { UnstyledLinkProps } from "@/components/shared/links/UnstyledLink";
+import { Logo } from '@/components/shared';
+import { UnstyledLink } from '@/components/shared/links';
+import { UnstyledLinkProps } from '@/components/shared/links/UnstyledLink';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
+} from '@/components/ui/accordion';
+import { Button } from '@/components/ui/button';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -24,14 +24,14 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+} from '@/components/ui/navigation-menu';
 import {
   Sheet,
   SheetContent,
   SheetFooter,
   SheetHeader,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from '@/components/ui/sheet';
 
 const ListItem = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
   ({ className, title, children, ...props }, ref) => {
@@ -41,8 +41,8 @@ const ListItem = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
           <UnstyledLink
             ref={ref}
             className={cn(
-              "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
-              className,
+              'hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors',
+              className
             )}
             {...props}
           >
@@ -54,7 +54,7 @@ const ListItem = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
         </NavigationMenuLink>
       </li>
     );
-  },
+  }
 );
 
 function Menu() {
@@ -135,11 +135,11 @@ const Navbar = () => {
         <Button
           variant="ghost"
           asChild
-          className={cn("shrink-0", isSidebar && "w-full")}
+          className={cn('shrink-0', isSidebar && 'w-full')}
         >
           <UnstyledLink href="/auth/login">Login</UnstyledLink>
         </Button>
-        <Button asChild className={cn("shrink-0", isSidebar && "w-full")}>
+        <Button asChild className={cn('shrink-0', isSidebar && 'w-full')}>
           <UnstyledLink href="/auth/register">Get Started</UnstyledLink>
         </Button>
       </>
@@ -149,23 +149,23 @@ const Navbar = () => {
   return (
     <Sheet>
       <div
-        className={cn("fixed z-30 w-full ")}
-        style={{ padding: isNotInView ? "0.6rem 0" : ".5rem 0" }}
+        className={cn('fixed z-30 w-full ')}
+        style={{ padding: isNotInView ? '0.6rem 0' : '.5rem 0' }}
       >
         <header
           className="layout flex h-full flex-col items-center justify-center rounded-2xl border backdrop-blur"
           style={{
-            padding: isNotInView ? "0" : ".7rem",
+            padding: isNotInView ? '0' : '.7rem',
             backgroundColor: isNotInView
-              ? "transparent"
-              : "hsl(var(--background) / 0.8)",
-            backdropFilter: isNotInView ? "" : "blur(1rem)",
-            borderWidth: isNotInView ? "0px" : "1px",
-            maxWidth: isNotInView ? "80rem" : "70rem",
-            transition: "all 0.3s ease",
+              ? 'transparent'
+              : 'hsl(var(--background) / 0.8)',
+            backdropFilter: isNotInView ? '' : 'blur(1rem)',
+            borderWidth: isNotInView ? '0px' : '1px',
+            maxWidth: isNotInView ? '80rem' : '70rem',
+            transition: 'all 0.3s ease',
           }}
         >
-          <div className={cn("flex w-full items-center justify-between")}>
+          <div className={cn('flex w-full items-center justify-between')}>
             <div className="flex-shrink-0">
               <Logo />
             </div>
@@ -204,7 +204,7 @@ const Navbar = () => {
                           <UnstyledLink
                             href={href}
                             className={cn(
-                              "hover:bg-accent hover:text-primary focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
+                              'hover:bg-accent hover:text-primary focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors'
                             )}
                             key={title}
                           >
@@ -233,7 +233,7 @@ const Navbar = () => {
                           <UnstyledLink
                             href={href}
                             className={cn(
-                              "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
+                              'hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors'
                             )}
                             key={title}
                           >
@@ -303,66 +303,66 @@ type INavLinks = {
 
 const nav_links: INavLinks[] = [
   {
-    title: "Platform",
-    href: "/platform-overview",
-    heroTitle: "AI-driven Career Development for Graduates",
+    title: 'Platform',
+    href: '/platform-overview',
+    heroTitle: 'AI-driven Career Development for Graduates',
     links: [
       {
-        title: "Job Matchmaking",
-        href: "/platform/job-matchmaking",
+        title: 'Job Matchmaking',
+        href: '/platform/job-matchmaking',
         description:
-          "Leverage AI-driven algorithms to match graduates with suitable job opportunities across various sectors.",
+          'Leverage AI-driven algorithms to match graduates with suitable job opportunities across various sectors.',
       },
       {
-        title: "Internships & Training",
-        href: "/platform/internships-training",
+        title: 'Internships & Training',
+        href: '/platform/internships-training',
         description:
-          "Explore opportunities for internships and industrial training to gain real-world experience.",
+          'Explore opportunities for internships and industrial training to gain real-world experience.',
       },
       {
-        title: "Mentorship Programs",
-        href: "/platform/mentorship",
+        title: 'Mentorship Programs',
+        href: '/platform/mentorship',
         description:
-          "Connect with industry professionals for guidance and mentorship to navigate early career challenges.",
+          'Connect with industry professionals for guidance and mentorship to navigate early career challenges.',
       },
     ],
   },
   {
-    title: "Solutions",
+    title: 'Solutions',
     links: [
       {
-        title: "Career Counseling",
-        href: "/solutions/career-counseling",
+        title: 'Career Counseling',
+        href: '/solutions/career-counseling',
         description:
-          "Access professional counseling and career guidance services tailored to help graduates succeed.",
+          'Access professional counseling and career guidance services tailored to help graduates succeed.',
       },
       {
-        title: "Resume Building",
-        href: "/solutions/resume-building",
+        title: 'Resume Building',
+        href: '/solutions/resume-building',
         description:
-          "Use our tools to create a professional resume that stands out to employers.",
+          'Use our tools to create a professional resume that stands out to employers.',
       },
       {
-        title: "Interview Preparation",
-        href: "/solutions/interview-preparation",
+        title: 'Interview Preparation',
+        href: '/solutions/interview-preparation',
         description:
-          "Prepare for interviews with tailored resources, tips, and mock interview sessions.",
+          'Prepare for interviews with tailored resources, tips, and mock interview sessions.',
       },
       {
-        title: "Job Application Support",
-        href: "/solutions/job-application-support",
+        title: 'Job Application Support',
+        href: '/solutions/job-application-support',
         description:
-          "Get support and resources to streamline the job application process from start to finish.",
+          'Get support and resources to streamline the job application process from start to finish.',
       },
       {
-        title: "Overseas Opportunities",
-        href: "/solutions/overseas-opportunities",
+        title: 'Overseas Opportunities',
+        href: '/solutions/overseas-opportunities',
         description:
-          "Discover and apply for international job opportunities in various sectors.",
+          'Discover and apply for international job opportunities in various sectors.',
       },
     ],
   },
-  { title: "Features", href: "/#features" },
-  { title: "Blog", href: "/blog" },
-  { title: "Contact Us", href: "/contact" },
+  { title: 'Features', href: '/#features' },
+  { title: 'Blog', href: '/blog' },
+  { title: 'Contact Us', href: '/contact' },
 ];

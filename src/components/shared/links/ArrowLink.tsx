@@ -1,20 +1,20 @@
-import * as React from "react";
+import * as React from 'react';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
-import UnderlineLink from "./UnderlineLink";
-import { UnstyledLinkProps } from "./UnstyledLink";
+import UnderlineLink from './UnderlineLink';
+import { UnstyledLinkProps } from './UnstyledLink';
 
 type ArrowLinkProps<C extends React.ElementType> = {
   as?: C;
-  direction?: "left" | "right";
+  direction?: 'left' | 'right';
 } & UnstyledLinkProps &
   React.ComponentProps<C>;
 
 export default function ArrowLink<C extends React.ElementType>({
   children,
   className,
-  direction = "right",
+  direction = 'right',
   as,
   ...rest
 }: ArrowLinkProps<C>) {
@@ -24,9 +24,9 @@ export default function ArrowLink<C extends React.ElementType>({
     <Component
       {...rest}
       className={cn(
-        "group gap-[0.25em]",
-        direction === "left" && "flex-row-reverse",
-        className,
+        'group gap-[0.25em]',
+        direction === 'left' && 'flex-row-reverse',
+        className
       )}
     >
       <span>{children}</span>
@@ -37,10 +37,10 @@ export default function ArrowLink<C extends React.ElementType>({
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={cn(
-          "relative",
-          "transition-transform duration-200",
-          direction === "right" ? "motion-safe:-translate-x-1" : "rotate-180",
-          "group-hover:translate-x-0",
+          'relative',
+          'transition-transform duration-200',
+          direction === 'right' ? 'motion-safe:-translate-x-1' : 'rotate-180',
+          'group-hover:translate-x-0'
         )}
       >
         <path
@@ -53,9 +53,9 @@ export default function ArrowLink<C extends React.ElementType>({
           strokeWidth="1.5"
           strokeLinecap="round"
           className={cn(
-            "origin-left transition-all duration-200",
-            "opacity-0 motion-safe:-translate-x-1",
-            "group-hover:translate-x-0 group-hover:opacity-100",
+            'origin-left transition-all duration-200',
+            'opacity-0 motion-safe:-translate-x-1',
+            'group-hover:translate-x-0 group-hover:opacity-100'
           )}
         />
       </svg>

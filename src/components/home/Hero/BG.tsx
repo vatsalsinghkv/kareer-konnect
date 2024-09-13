@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
-type Props = React.ComponentPropsWithoutRef<"svg">;
+type Props = React.ComponentPropsWithoutRef<'svg'>;
 
 export default function BG({ className, ...props }: Props) {
   return (
     <svg
       aria-hidden="true"
       className={cn(
-        "absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-neutral-50 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]",
-        className,
+        'absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-neutral-50 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]',
+        className
       )}
       {...props}
     >

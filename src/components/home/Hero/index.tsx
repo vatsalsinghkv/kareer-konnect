@@ -1,7 +1,7 @@
 // import CalendlyBtn from './DemoBtn';
-import BG from "@/components/home/Hero/BG";
-import { UnstyledLink } from "@/components/shared/links";
-import { Button } from "@/components/ui/button";
+import BG from '@/components/home/Hero/BG';
+import { UnstyledLink } from '@/components/shared/links';
+import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
               </p>
 
               <h1 className="h-title mt-8">
-                Empower your career with{" "}
+                Empower your career with{' '}
                 <span className="text-gradient-secondary">AI-driven</span> job
                 matchmaking
               </h1>

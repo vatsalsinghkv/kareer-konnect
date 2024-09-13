@@ -1,25 +1,25 @@
-import { cva, VariantProps } from "class-variance-authority";
-import { CircleAlert, CircleCheckBig, TriangleAlert } from "lucide-react";
+import { cva, VariantProps } from 'class-variance-authority';
+import { CircleAlert, CircleCheckBig, TriangleAlert } from 'lucide-react';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 const inlineVariants = cva(
-  "flex justify-center gap-x-2 rounded-md p-3 text-sm",
+  'flex justify-center gap-x-2 rounded-md p-3 text-sm',
   {
     variants: {
       variant: {
-        error: "bg-destructive/30 text-red-500",
-        success: "bg-green-400/20 text-green-400",
-        warning: "bg-amber-400/25 text-amber-400",
+        error: 'bg-destructive/30 text-red-500',
+        success: 'bg-green-400/20 text-green-400',
+        warning: 'bg-amber-400/25 text-amber-400',
       },
     },
-  },
+  }
 );
 
 interface Props
-  extends React.ComponentPropsWithoutRef<"div">,
+  extends React.ComponentPropsWithoutRef<'div'>,
     VariantProps<typeof inlineVariants> {
-  variant: "error" | "success" | "warning"; // make variant required
+  variant: 'error' | 'success' | 'warning'; // make variant required
   message?: string;
 }
 
@@ -27,9 +27,9 @@ export const Inline = ({ message, className, variant, ...props }: Props) => {
   if (!message) return null;
 
   const Tag =
-    variant === "warning"
+    variant === 'warning'
       ? CircleAlert
-      : variant === "error"
+      : variant === 'error'
         ? TriangleAlert
         : CircleCheckBig;
 

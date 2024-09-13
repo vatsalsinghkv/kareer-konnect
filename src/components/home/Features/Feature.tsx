@@ -1,7 +1,7 @@
-import { FeatureType } from "@/lib/types";
-import { cn } from "@/lib/utils";
+import { FeatureType } from '@/lib/types';
+import { cn } from '@/lib/utils';
 
-type Props = React.ComponentPropsWithoutRef<"div"> & FeatureType;
+type Props = React.ComponentPropsWithoutRef<'div'> & FeatureType;
 
 export default function Feature({
   name,
@@ -10,7 +10,7 @@ export default function Feature({
   ...props
 }: Props) {
   return (
-    <li className={cn("flex gap-6 items-start", { ...props })}>
+    <li className={cn('flex gap-6 items-start', { ...props })}>
       <Icon className="text-primary mt-0.5 h-6 w-6 flex-shrink-0" />
 
       <div>

@@ -1,19 +1,19 @@
-"use client";
-import { BookOpen, Briefcase, GraduationCap, Target } from "lucide-react";
-import Image from "next/image";
+'use client';
+import { BookOpen, Briefcase, GraduationCap, Target } from 'lucide-react';
+import Image from 'next/image';
 
-import { FeatureType } from "@/lib/types";
+import { FeatureType } from '@/lib/types';
 
-import { Wrapper } from "@/components/layout";
+import { Wrapper } from '@/components/layout';
 
-import Feature from "./Feature";
+import Feature from './Feature';
 
 const Features = () => {
   return (
     <Wrapper id="features">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="mt-16 mb-6 h1">
-          Helping Graduates{" "}
+          Helping Graduates{' '}
           <span className="text-gradient-primary">Bridge the Gap</span> between
           Education and Employment.
         </h2>
@@ -52,31 +52,31 @@ export default Features;
 
 export const features: FeatureType[] = [
   {
-    id: "f1",
-    name: "AI-Driven Job Matchmaking",
+    id: 'f1',
+    name: 'AI-Driven Job Matchmaking',
     description:
-      "Our advanced algorithms connect you with job opportunities tailored to your skills, qualifications, and preferences.",
+      'Our advanced algorithms connect you with job opportunities tailored to your skills, qualifications, and preferences.',
     icon: Target,
   },
   {
-    id: "f2",
-    name: "Access to Diverse Job Markets",
+    id: 'f2',
+    name: 'Access to Diverse Job Markets',
     description:
-      "Gain access to private, government, and international job opportunities with regularly updated listings.",
+      'Gain access to private, government, and international job opportunities with regularly updated listings.',
     icon: Briefcase,
   },
   {
-    id: "f3",
-    name: "Career Counseling & Guidance",
+    id: 'f3',
+    name: 'Career Counseling & Guidance',
     description:
-      "Get personalized counseling and resources, including resume building, interview preparation, and career advice.",
+      'Get personalized counseling and resources, including resume building, interview preparation, and career advice.',
     icon: BookOpen,
   },
   {
-    id: "f4",
-    name: "Internships & Industrial Training",
+    id: 'f4',
+    name: 'Internships & Industrial Training',
     description:
-      "Explore internships and training programs designed to give you hands-on experience and help kickstart your career.",
+      'Explore internships and training programs designed to give you hands-on experience and help kickstart your career.',
     icon: GraduationCap,
   },
 ];

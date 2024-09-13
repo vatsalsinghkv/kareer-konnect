@@ -1,11 +1,11 @@
-import { Facebook, Instagram, LucideIcon, Twitter } from "lucide-react";
+import { Facebook, Instagram, LucideIcon, Twitter } from 'lucide-react';
 
-import { IconLinkType, LinkType } from "@/lib/types";
+import { IconLinkType, LinkType } from '@/lib/types';
 
-import Wrapper from "@/components/layout/Wrapper";
-import { Logo } from "@/components/shared";
-import { NavLink, UnstyledLink } from "@/components/shared/links";
-import { Button } from "@/components/ui/button";
+import Wrapper from '@/components/layout/Wrapper';
+import { Logo } from '@/components/shared';
+import { NavLink, UnstyledLink } from '@/components/shared/links';
+import { Button } from '@/components/ui/button';
 
 export default function Footer() {
   return (
@@ -59,28 +59,28 @@ export default function Footer() {
 }
 
 const links: LinkType[] = [
-  { name: "FAQs", href: "/#faqs" },
-  { name: "Contact", href: "/contact" },
-  { name: "Career Guidance", href: "/career-guidance" },
-  { name: "Internships", href: "/internships" },
+  { name: 'FAQs', href: '/#faqs' },
+  { name: 'Contact', href: '/contact' },
+  { name: 'Career Guidance', href: '/career-guidance' },
+  { name: 'Internships', href: '/internships' },
 ];
 
 const supportLinks: LinkType[] = [
-  { name: "Privacy Policy", href: "/privacy-policy" },
-  { name: "Terms of Service", href: "/terms-of-service" },
+  { name: 'Privacy Policy', href: '/privacy-policy' },
+  { name: 'Terms of Service', href: '/terms-of-service' },
 ];
 
 const socialLinks: IconLinkType[] = [
   {
-    href: "https://twitter.com/",
+    href: 'https://twitter.com/',
     icon: Twitter,
   },
   {
-    href: "https://www.facebook.com/",
+    href: 'https://www.facebook.com/',
     icon: Facebook,
   },
   {
-    href: "https://www.instagram.com/",
+    href: 'https://www.instagram.com/',
     icon: Instagram,
   },
 ];

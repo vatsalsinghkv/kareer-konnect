@@ -1,4 +1,4 @@
-import { LucideIcon } from "lucide-react";
+import { LucideIcon } from 'lucide-react';
 
 export type LinkType = {
   name: string;
@@ -20,7 +20,7 @@ export type FeatureType = {
 export type ProductType = {
   id: string;
   name: string;
-  tag?: "new" | "sale";
+  tag?: 'new' | 'sale';
   image: string;
   price: number;
   rating: number;
