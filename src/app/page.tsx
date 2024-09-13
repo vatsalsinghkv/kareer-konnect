@@ -1,4 +1,5 @@
-import { Companies, Faqs, Features, Hero } from "@/components/home";
+import { Companies, Faqs, Features, Hero } from '@/components/home';
+import { ChatBot } from '@/components/shared';
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Features />
       <Companies />
       <Faqs />
+      <ChatBot />
     </>
   );
 }

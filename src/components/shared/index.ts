@@ -1,9 +1,8 @@
-import Lottie from "@/components/shared/Lottie";
+import ChatBot from '@/components/shared/ChatBot';
+import Inline from '@/components/shared/Inline';
+import ListItem from '@/components/shared/ListItem';
+import Logo from '@/components/shared/Logo';
+import Lottie from '@/components/shared/Lottie';
+import NotFound from '@/components/shared/NotFound';
 
-import Inline from "./Inline";
-import ListItem from "./ListItem";
-import Logo from "./Logo";
-import NotFound from "./NotFound";
-import Tooltip from "./Tooltip";
-
-export { Inline, ListItem, Logo, Lottie, NotFound, Tooltip };
+export { ChatBot, Inline, ListItem, Logo, Lottie, NotFound };
