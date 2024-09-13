@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root,
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 210 100% 45%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --complimentary: 292 84% 61%;
+    --complimentary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 258 90% 66%;
+    --radius: 0.5rem;
+    --success: 142, 71%, 45%;
+    --danger: 0, 84%, 60%;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 95%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 210 100% 45%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --complimentary: 292 84% 61%;
+    --complimentary-foreground: 240 5.9% 10%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 258 90% 66%;
+    --success: 142, 69%, 58%;
+    --danger: 0, 91%, 71%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground min-h-screen;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  ::selection {
+    @apply bg-primary/30;
+  }
+
+  ::-webkit-scrollbar {
+    height: 2px;
+    border-radius: 999px;
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--border));
+    border-radius: 999px;
+  }
+
+  .cursor-newtab {
+    cursor:
+      url('/images/new-tab.png') 10 10,
+      pointer;
+  }
+
+  /* #region  /**=========== Typography =========== */
+
+  .text-highlight {
+    @apply font-serif text-primary italic;
+    text-transform: inherit;
+  }
+
+  .h0 {
+    @apply text-3xl sm:text-4xl md:text-5xl xl:text-5xl tracking-tighter font-normal;
+  }
+
+  .h-title {
+    @apply font-sans text-4xl md:text-5xl lg:text-6xl tracking-tighter font-normal;
+  }
+
+  .h-subtitle {
+    @apply text-4xl tracking-tighter font-normal md:leading-relaxed md:text-5xl lg:text-6xl;
+  }
+
+  h1,
+  .h1 {
+    @apply text-3xl tracking-tighter font-normal leading-relaxed md:text-4xl lg:text-5xl;
+  }
+
+  h2,
+  .h2 {
+    @apply text-2xl tracking-tighter font-normal md:text-4xl;
+  }
+
+  h3,
+  .h3 {
+    @apply text-lg font-normal md:text-2xl;
+  }
+
+  h4,
+  .h4 {
+    @apply text-base font-normal md:text-lg;
+  }
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-fuchsia-500 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-secondary {
+    @apply bg-gradient-to-r from-sky-400 to-teal-400 bg-clip-text text-transparent;
+  }
+  /* #endregion  /**======== Typography =========== */
+
+  .layout {
+    /* 1100px */
+    max-width: 68.75rem;
+    @apply mx-auto w-11/12;
+  }
+
+  .layout.layout-sm {
+    max-width: 70rem;
+  }
+
+  .section {
+    @apply bg-background py-20 xl:py-24;
+  }
+
+  .bg-dark a.custom-link {
+    @apply border-gray-200 hover:border-gray-200/0;
+  }
+
+  /* Class to adjust with sticky footer */
+  .min-h-main {
+    @apply min-h-[calc(100vh-56px)];
+  }
+}
+
+@layer utilities {
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .animate-float {
+    animation: float 2s ease-in-out infinite;
+  }
+
+  .animated-underline {
+    @apply bg-[linear-gradient(#33333300,#33333300),linear-gradient(to_right,hsl(var(--primary)),hsl(var(--primary)))];
+    background-size:
+      100% 2px,
+      0 2px;
+    background-position:
+      100% 100%,
+      0 100%;
+    background-repeat: no-repeat;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .animated-underline {
+      transition: 0.3s ease;
+      transition-property: background-size, color, background-color,
+        border-color;
+    }
+  }
+  .animated-underline:hover,
+  .animated-underline:focus-visible {
+    background-size:
+      0 2px,
+      100% 2px;
+  }
+}
