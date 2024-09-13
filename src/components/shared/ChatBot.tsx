@@ -7,12 +7,12 @@ export default function ChatBot() {
   return (
     <button
       className={cn(
-        'w-14 h-14 rounded-full shadow-lg bg-primary',
+        'md:w-14 w-12 h-12 md:h-14 rounded-full shadow-lg bg-primary',
         'flex items-center justify-center',
-        'fixed right-12 bottom-12 z-10 group'
+        'fixed right-5 bottom-5 md:right-12 md:bottom-12 z-10 group'
       )}
     >
-      <BotMessageSquare className="text-primary-foreground w-8 h-8 group-hover:scale-[1.1] transition-all" />
+      <BotMessageSquare className="text-primary-foreground w-6 h-6 md:w-8 md:h-8 group-hover:scale-[1.1] transition-all" />
       {/* Tooltip */}
       <div className="absolute invisible px-2 py-1 text-sm text-white capitalize duration-200 rounded opacity-0 w-max group-hover:opacity-100 group-hover:visible -top-10 bg-slate-900/75 dark:bg-slate-700/90 dark:text-slate-100">
         ChatBot

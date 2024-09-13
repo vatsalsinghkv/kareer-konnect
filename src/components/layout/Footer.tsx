@@ -22,7 +22,7 @@ export default function Footer() {
         </ul>
 
         {socialLinks.length > 0 && (
-          <ul className="flex items-center justify-center mt-8 space-x-3 sm:mt-12 lg:justify-end lg:mt-0">
+          <ul className="flex items-center justify-center mt-8 space-x-4 sm:mt-12 lg:justify-end lg:mt-0">
             {socialLinks.map((link, i) => {
               const Icon = link.icon as LucideIcon;
               return (
@@ -60,7 +60,7 @@ export default function Footer() {
 
 const links: LinkType[] = [
   { name: 'FAQs', href: '/#faqs' },
-  { name: 'Contact', href: '/contact' },
+  // { name: 'Contact', href: '/contact' },
   { name: 'Career Guidance', href: '/career-guidance' },
   { name: 'Internships', href: '/internships' },
 ];
