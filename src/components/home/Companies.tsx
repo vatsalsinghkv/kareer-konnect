@@ -98,29 +98,3 @@ const Companies = () => {
   );
 };
 export default Companies;
-
-const companies = [
-  {
-    name: 'Dr Insanity',
-    img: 'https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-3.png',
-    url: 'https://www.youtube.com/@DrInsanityCrime',
-  },
-  {
-    name: 'Agent Twelve',
-    img: 'https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-2.png',
-    url: 'https://www.youtube.com/@AgentTwelve',
-  },
-  /* {
-    name: 'logoipsum',
-    url: 'https://landingfoliocom.imgix.net/store/collection/',
-  },
-  {
-    name: 'alterbone',
-    url: 'https://landingfoliocom.imgix.net/store/collection/',
-  },
-  {
-    name: 'tinygone',
-    img: 'https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-4.png',
-    url: 'https://landingfoliocom.imgix.net/store/collection/',
-  }, */
-];
