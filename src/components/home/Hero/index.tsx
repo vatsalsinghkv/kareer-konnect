@@ -1,9 +1,11 @@
 // import CalendlyBtn from './DemoBtn';
 import BG from '@/components/home/Hero/BG';
+import { UnstyledLink } from '@/components/shared/links';
+import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <div className='overflow-x-hidden pt-20 md:pt-24'>
+    <div className='overflow-x-hidden pt-20 md:pt-16'>
       <BG className='dark:hidden' />
       <section className='relative py-12 sm:py-16 lg:py-24'>
         <div className='layout'>
@@ -28,13 +30,13 @@ const Hero = () => {
               <div className='mt-10 flex flex-col items-center justify-center gap-5 md:flex-row'></div>
               {/* <div className='mt-5 italic'>Platform development in progress</div> */}
 
-              {/* <Button size='lg' asChild>
-              <UnstyledLink href='/signup'>Get Started</UnstyledLink>
-            </Button> */}
+              <Button size='lg' asChild>
+                <UnstyledLink href='/signup'>Get Started</UnstyledLink>
+              </Button>
             </div>
 
             {/* <Lottie
-              path='/lotties/career-growth.json'
+              path='/lotties/about.json'
               className='w-full md:-mr-10 md:-mt-10 lg:min-w-[448px]'
             /> */}
           </div>

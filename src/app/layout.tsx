@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: 'KareerKonnect | Empowering Your Job Search and Career Development',
   description:
     'Unlock your potential with KareerKonnect. Access diverse job opportunities, internships, and mentorship programs tailored to graduates seeking success in the job market.',
-  metadataBase: new URL('https://www.careerconnect.com/'),
+  metadataBase: new URL('https://www.kareerkonnect.vercel.app/'),
   robots: { index: true, follow: true },
   icons: {
     icon: '/images/favicon/favicon.ico',
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     title: 'KareerKonnect | Empowering Your Job Search and Career Development',
     description:
       'Unlock your potential with KareerKonnect. Access diverse job opportunities, internships, and mentorship programs tailored to graduates seeking success in the job market.',
-    url: 'https://www.careerconnect.com/',
+    url: 'https://www.kareerkonnect.vercel.app/',
     siteName: 'KareerKonnect',
     images: [
       {
-        url: 'https://www.careerconnect.com/images/og.png',
+        url: 'https://www.kareerkonnect.vercel.app/images/og.png',
         width: 800,
         height: 600,
         alt: 'KareerKonnect',

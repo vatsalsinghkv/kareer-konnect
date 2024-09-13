@@ -133,7 +133,7 @@ const Navbar = () => {
     return (
       <>
         <Button
-          variant='outline'
+          variant='ghost'
           asChild
           className={cn('shrink-0', isSidebar && 'w-full')}
         >
