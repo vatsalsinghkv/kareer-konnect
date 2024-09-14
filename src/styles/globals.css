@@ -107,31 +107,31 @@
   }
 
   .h-title {
-    @apply font-sans text-4xl md:text-5xl lg:text-7xl tracking-tighter font-normal;
+    @apply font-sans text-4xl md:text-5xl lg:text-7xl tracking-tighter font-medium;
   }
 
   .h-subtitle {
-    @apply text-4xl tracking-tighter font-normal md:leading-relaxed md:text-5xl lg:text-6xl;
+    @apply text-4xl tracking-tighter font-medium md:leading-relaxed md:text-5xl lg:text-6xl;
   }
 
   h1,
   .h1 {
-    @apply text-3xl tracking-tighter font-normal md:leading-relaxed md:text-4xl lg:text-5xl;
+    @apply text-3xl tracking-tighter font-medium md:leading-relaxed md:text-4xl lg:text-5xl;
   }
 
   h2,
   .h2 {
-    @apply text-2xl tracking-tighter font-normal md:text-4xl;
+    @apply text-2xl tracking-tighter font-medium md:text-4xl;
   }
 
   h3,
   .h3 {
-    @apply text-lg font-normal md:text-2xl;
+    @apply text-lg font-medium md:text-2xl;
   }
 
   h4,
   .h4 {
-    @apply text-base font-normal md:text-lg;
+    @apply text-base font-medium md:text-lg;
   }
   .text-gradient-primary {
     /* @apply bg-gradient-to-r from-primary to-fuchsia-500 bg-clip-text text-transparent; */
