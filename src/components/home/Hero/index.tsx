@@ -1,5 +1,6 @@
 // import CalendlyBtn from './DemoBtn';
 import BG from '@/components/home/Hero/BG';
+import { Lottie } from '@/components/shared';
 import { UnstyledLink } from '@/components/shared/links';
 import { Button } from '@/components/ui/button';
 
@@ -35,10 +36,10 @@ const Hero = () => {
               </Button>
             </div>
 
-            {/* <Lottie
-              path='/lotties/about.json'
-              className='w-full md:-mr-10 md:-mt-10 lg:min-w-[448px]'
-            /> */}
+            <Lottie
+              path="/lotties/job.json"
+              className="w-full lg:min-w-[470px]"
+            />
           </div>
         </div>
       </section>
