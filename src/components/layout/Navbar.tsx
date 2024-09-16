@@ -384,10 +384,6 @@ const nav_links: INavLinks[] = [
     ],
   },
   {
-    title: 'Mentorship',
-    href: '.mentorship',
-  },
-  {
     title: 'Skill Dev & Resources',
     links: [
       {
