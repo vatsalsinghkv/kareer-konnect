@@ -303,35 +303,39 @@ type INavLinks = {
 
 const nav_links: INavLinks[] = [
   {
-    title: 'Platform',
-    href: '/platform-overview',
-    heroTitle: 'AI-driven Career Development for Graduates',
+    title: 'Job Listing',
     links: [
       {
-        title: 'Job Matchmaking',
-        href: '/platform/job-matchmaking',
+        title: 'Private Sector Jobs',
+        href: '/solutions/career-counseling',
         description:
-          'Leverage AI-driven algorithms to match graduates with suitable job opportunities across various sectors.',
+          'Access professional counseling and career guidance services tailored to help graduates succeed.',
       },
       {
-        title: 'Internships & Training',
-        href: '/platform/internships-training',
+        title: 'Government Sector Jobs',
+        href: '/solutions/resume-building',
         description:
-          'Explore opportunities for internships and industrial training to gain real-world experience.',
+          'Use our tools to create a professional resume that stands out to employers.',
       },
       {
-        title: 'Mentorship Programs',
-        href: '/platform/mentorship',
+        title: 'Overseas Opportunities',
+        href: '/solutions/overseas-opportunities',
         description:
-          'Connect with industry professionals for guidance and mentorship to navigate early career challenges.',
+          'Discover and apply for international job opportunities in various sectors.',
+      },
+      {
+        title: 'Advanced Search',
+        href: '/solutions/job-application-support',
+        description:
+          'Get support and resources to streamline the job application process from start to finish.',
       },
     ],
   },
   {
-    title: 'Solutions',
+    title: 'Counselling & Guidance',
     links: [
       {
-        title: 'Career Counseling',
+        title: 'Career Guidance',
         href: '/solutions/career-counseling',
         description:
           'Access professional counseling and career guidance services tailored to help graduates succeed.',
@@ -344,25 +348,72 @@ const nav_links: INavLinks[] = [
       },
       {
         title: 'Interview Preparation',
-        href: '/solutions/interview-preparation',
+        href: '/solutions/overseas-opportunities',
         description:
-          'Prepare for interviews with tailored resources, tips, and mock interview sessions.',
+          'Discover and apply for international job opportunities in various sectors.',
       },
       {
-        title: 'Job Application Support',
+        title: 'Career Advice Articles',
         href: '/solutions/job-application-support',
         description:
           'Get support and resources to streamline the job application process from start to finish.',
       },
+    ],
+  },
+  {
+    title: 'Internships & Training',
+    links: [
       {
-        title: 'Overseas Opportunities',
+        title: 'Internships',
+        href: '/solutions/career-counseling',
+        description:
+          'Access professional counseling and career guidance services tailored to help graduates succeed.',
+      },
+      {
+        title: 'Resume Building',
+        href: '/solutions/resume-building',
+        description:
+          'Use our tools to create a professional resume that stands out to employers.',
+      },
+      {
+        title: 'Industrial Training',
         href: '/solutions/overseas-opportunities',
         description:
           'Discover and apply for international job opportunities in various sectors.',
       },
     ],
   },
-  { title: 'Features', href: '/#features' },
-  { title: 'Blog', href: '/blog' },
-  { title: 'Contact Us', href: '/contact' },
+  {
+    title: 'Mentorship',
+    href: '.mentorship',
+  },
+  {
+    title: 'Skill Dev & Resources',
+    links: [
+      {
+        title: 'Course Recommendations',
+        href: '/solutions/career-counseling',
+        description:
+          'Access professional counseling and career guidance services tailored to help graduates succeed.',
+      },
+      {
+        title: 'Job Market Insights',
+        href: '/solutions/resume-building',
+        description:
+          'Use our tools to create a professional resume that stands out to employers.',
+      },
+      {
+        title: 'Other Courses',
+        href: '/solutions/overseas-opportunities',
+        description:
+          'Discover and apply for international job opportunities in various sectors.',
+      },
+      {
+        title: 'Training',
+        href: '/solutions/job-application-support',
+        description:
+          'Get support and resources to streamline the job application process from start to finish.',
+      },
+    ],
+  },
 ];
